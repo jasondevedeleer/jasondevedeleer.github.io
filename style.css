@@ -147,6 +147,10 @@ footer h3 {
   width: 40%;
 }
 
+.foto-section img {
+  padding-top: 30px;
+}
+
 .section-1 h1 {
   display: inline;
   text-align: center;
