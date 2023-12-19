@@ -3,31 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Jason Devedeleer, Deelname aan studentenparticipatie tijdens mijn hogeschool carriere."
+    />
     <title>Studentenparticipatie</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="logo">
         <h3>Devedeleer Jason</h3>
       </div>
-      <div class="navigatie">
-        <ul>
-          <li><a class="nav_button" href="index.html">Home</a></li>
-          <li>
-            <a class="nav_button" href="Studentenparticipatie.html">Studentenparticipatie</a>
-          </li>
-          <li><a class="nav_button" href="werkervaring.html">Werkervaring</a></li>
-          <li>
-            <a class="nav_button" href="contact.html">Contact</a>
-          </li>
-        </ul>
+            <div class="navigatie">
+        <div class="nav_inhoud" id="nav_inhoud">
+          <a class="nav_button" href="index.html">Home</a>
+          <a class="nav_button active" href="Studentenparticipatie.html"
+            >Studentenparticipatie</a
+          >
+          <a class="nav_button" href="werkervaring.html">Werkervaring</a>
+          <a class="nav_button" href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </header>
     <div class="wrapper">
       <div class="participatie een">
         <div class="logo_participatie">
-          <a href="https://enigmabrussel.be/"><img src="images/Enigma.png" /></a>
+          <a href="https://enigmabrussel.be/" target="_blank"><img src="images/Enigma.png" alt="Enigma Brussel" /></a>
         </div>
         <div class="info">
           <div class="info_naam">
@@ -50,14 +59,14 @@
       <hr />
       <div class="participatie twee">
         <div class="logo_participatie">
-          <a href="https://bsk.brussels/"><img src="images/BSK.png" /></a>
+          <a href="https://bsk.brussels/" target="_blank"><img src="images/BSK.png" alt="Brussel Senioren Konvent" /></a>
         </div>
         <div class="info">
           <div class="info_naam">
             <h1>Brussel Senioren Konvent</h1>
             <p>
               Overkoepelend orgaan voor Studentenverenegingen van de
-              Erasmushogeschool Brussel, Koningklijke Militaire school &
+              EhB, KMS &
               Regionale Kringen
             </p>
           </div>
@@ -71,7 +80,7 @@
       <hr />
       <div class="participatie drie">
         <div class="logo_participatie">
-          <a href="https://www.facebook.com/groups/8692514573"><img src="images/MG.png" /></a>
+          <a href="https://www.facebook.com/groups/8692514573" target="_blank"><img src="images/MG.png" alt="Moeder Gevaar" /></a>
         </div>
         <div class="info">
           <div class="info_naam">
@@ -92,5 +101,15 @@
     <footer>
       <h3><span>&copy;</span>Devedeleer Jason 2023</h3>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav_inhoud");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
