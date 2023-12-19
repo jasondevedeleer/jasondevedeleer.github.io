@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Jason Devedeleer, Mij contacteren doe je zo."
+    />
+    <title>Werkervaring</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h3>Devedeleer Jason</h3>
+      </div>
+      <div class="navigatie">
+        <div class="nav_inhoud" id="nav_inhoud">
+          <a class="nav_button" href="index.html">Home</a>
+          <a class="nav_button" href="Studentenparticipatie.html"
+            >Studentenparticipatie</a
+          >
+          <a class="nav_button" href="werkervaring.html">Werkervaring</a>
+          <a class="nav_button active" href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <section class="info_wrapper">
+      <div class="contact"><h1>Contact</h1></div>
+      <div class="form_contact">
+        <div class="form_input">
+          <label class="form_label">Name*</label>
+          <input type="text" style="color:white" name="name_field" data-validate="required,Generic" placeholder="Your name..." required>
+        </div>
+        <div class="form_input">
+          <label class="form_label">Email*</label>
+          <input type="text" style="color:white" name="email_field" data-validate="required,email,Generic" placeholder="Your email..." required>
+        </div>
+        <div class="form_input">
+          <label class="form_label">Message*</label>
+          <textarea type="text" style="color:white" name="message_field" data-validate="required,Generic" placeholder="Your message..." required></textarea>
+        </div>
+        <div class="form_submit">
+          <a class="nav_button"><span>Submit</span></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3><span>&copy;</span>Devedeleer Jason 2023</h3>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav_inhoud");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
